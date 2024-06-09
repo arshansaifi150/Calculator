@@ -9,12 +9,12 @@
   <body>
     <div class="parent-container">
       <div class="calculator-container">
-        <div class="whitespace"></div>
+        <div class="whitespace">0</div>
         <div class="operator-container">
-            <button class="plus">+</button>
-            <button class="minus">-</button>
-            <button class="multiply">*</button>
-            <button class="devide">/</button>
+            <button class="plus" data-action="add">+</button>
+            <button class="minus" data-action="subtract">-</button>
+            <button class="multiply" data-action="multiply">*</button>
+            <button class="divide" data-action="divide">/</button>
         </div>
           <div class="number-equal-parent-container">
             <div class="number-container">
@@ -28,14 +28,14 @@
                 <button class="two">2</button>
                 <button class="three">3</button>
                 <button class="zero">0</button>
-                <button class="dot">.</button>
-                <button class="del">DEL</button>
+                <button class="dot" data-action="decimal">.</button>
+                <button class="AC" data-action="clear">AC</button>
             </div>
             <div class="equal-container">
-              <button class="equal">
+              <button class="equal" data-action = "calculate">
                 =
               </button>
-              <button class="AC">AC</button>
+              
             </div>
           </div>
         </div>
