@@ -12,6 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 
 }
 
@@ -35,7 +36,10 @@ body{
     border-top-left-radius: 10px;
     text-align: end;
     align-content: end;
-    font-size: xx-large;padding: 4px;
+    font-size: xx-large;
+    padding: 4px;
+    border: none;
+
 
 }
 .operator-container{
@@ -56,6 +60,7 @@ body{
     
     height: 66%;
     display: flex;
+    
     
 }
 .number-container{
@@ -93,5 +98,16 @@ body{
     
     color: white;
     font-size: large;
+
+}
+
+button{
+    font-size: large;
+    font-weight: 600;
+    transition: .1s;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(.97);
 
 }

@@ -9,30 +9,30 @@
   <body>
     <div class="parent-container">
       <div class="calculator-container">
-        <div class="whitespace">0</div>
+        <input type="text" class="whitespace" id="display" readonly >
         <div class="operator-container">
-            <button class="plus" data-action="add">+</button>
-            <button class="minus" data-action="subtract">-</button>
-            <button class="multiply" data-action="multiply">*</button>
-            <button class="divide" data-action="divide">/</button>
+            <button  onclick="appendToDisplay('+')">+</button>
+            <button  onclick="appendToDisplay('-')">-</button>
+            <button  onclick="appendToDisplay('*')">*</button>
+            <button  onclick="appendToDisplay('/')">/</button>
         </div>
           <div class="number-equal-parent-container">
             <div class="number-container">
-                <button class="seven">7</button>
-                <button class="eight">8</button>
-                <button class="nine">9</button>
-                <button class="four">4</button>
-                <button class="five">5</button>
-                <button class="six">6</button>
-                <button class="one">1</button>
-                <button class="two">2</button>
-                <button class="three">3</button>
-                <button class="zero">0</button>
-                <button class="dot" data-action="decimal">.</button>
-                <button class="AC" data-action="clear">AC</button>
+                <button  onclick="appendToDisplay('7')">7</button>
+                <button  onclick="appendToDisplay('8')">8</button>
+                <button  onclick="appendToDisplay('9')">9</button>
+                <button  onclick="appendToDisplay('4')">4</button>
+                <button  onclick="appendToDisplay('5')">5</button>
+                <button  onclick="appendToDisplay('6')">6</button>
+                <button  onclick="appendToDisplay('1')">1</button>
+                <button  onclick="appendToDisplay('2')">2</button>
+                <button  onclick="appendToDisplay('3')">3</button>
+                <button  onclick="appendToDisplay('0')">0</button>
+                <button  onclick="appendToDisplay('.')">.</button>
+                <button class="AC"  onclick="clearDisplay()">AC</button>
             </div>
             <div class="equal-container">
-              <button class="equal" data-action = "calculate">
+              <button class="equal"  onclick="calculate()">
                 =
               </button>
               
